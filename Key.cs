@@ -18,6 +18,7 @@ namespace Enigma
         {
             symbols = _symbols;
             
+            //check if file exists
             if (!File.Exists(KeyFilePath))
             {
                 GenerateNewKey();
